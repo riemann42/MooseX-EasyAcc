@@ -83,8 +83,8 @@ not classes that it is applied to.
 
 =head1 ACKNOWLEDGMENTS
 
-Much of this is based on reviewing Dave Rolsky's MooseX::FollowPBP.  This
-module is Copyright (c) 2011 by Dave Rolsky and is available wherever fine
+Much of this is based on reviewing Dave Rolsky's MooseX::FollowPBP, 
+Copyright (c) 2011 by Dave Rolsky and is available wherever fine
 Perl modules are distributed.
 
 =head1 SEE ALSO
