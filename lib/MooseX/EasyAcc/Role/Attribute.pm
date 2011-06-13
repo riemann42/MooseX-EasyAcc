@@ -1,7 +1,6 @@
 package MooseX::EasyAcc::Role::Attribute;
 #ABSTRACT: Attribute trait for L<MooseX::EasyAcc>
 use Moose::Role;
-use Data::Dumper;
 before _process_options => sub {
     my ($class, $name,$options) = @_;
 
@@ -32,10 +31,20 @@ before _process_options => sub {
 
 1;
 
-
 =head1 SYNOPSIS
 
-See L<MooseX::EasyAcc>
+See L<MooseX::EasyAcc>, or if you like more work for yourself:
+
+    package MyApp;
+    use Moose;
+    use MooseX::EasyAcc::Role::Attribute;
+
+    has 'everything' => (
+        is => 'rw',
+        isa => 'Str',
+        traits => ['MooseX::EasyAcc::Role::Attribute'],
+    );
+    # Creates methods everything, set_everything, and has_everything
   
 =head1 DESCRIPTION
 
